@@ -1,5 +1,5 @@
 import React from "react";
-import {classes} from './Form.css'
+import classes from './Form.module.css'; 
 
 const Form = (props) => {
     // const [items, setItems] = useState(null);
@@ -8,8 +8,11 @@ const Form = (props) => {
     return(
         <div className={classes.Form}>
             <h1>Task Manager</h1>
-            <input/>
-            <button>Submit</button>
+            <div>
+                <input type = "text" placeholder="e.g. wash dishes"/>
+                <button className ={classes.button}>Submit</button>
+            </div>
+            
         </div>
     )
 }

@@ -1,9 +1,13 @@
 import React from 'react';
 import Form from './components/Form/Form';
+import classes from './App.module.css';
 
 const App =() => {
   return (
-    <Form/>
+    <div className={classes.App}>
+      <Form/>
+    </div>
+    
   )
 }
 
